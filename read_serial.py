@@ -2,7 +2,8 @@ import requests
 import time
 import random
 
-URL = "http://localhost:8000/update"  # This is your FastAPI backend
+URL = "https://esp32-fyp-dashboard-ru6l.vercel.app/update"
+  # This is your FastAPI backend
 
 while True:
     data = {

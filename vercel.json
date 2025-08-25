@@ -4,16 +4,12 @@
     {
       "src": "api/api.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "ui/ui.py",
-      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "ui/ui.py"
+      "dest": "api/api.py"
     }
   ]
 }

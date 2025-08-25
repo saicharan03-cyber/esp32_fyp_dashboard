@@ -35,7 +35,7 @@ file_picker = None
 # --- Button Handlers ---
 def on_refresh(e):
     try:
-        r = requests.get("http://127.0.0.1:8000/latest")
+        r = requests.get("https://esp32-fyp-dashboard-ru6l.vercel.app/latest")
         data = r.json()
         hr_text.value = f"Heart Rate: {data.get('heart_rate', '--')} bpm"
         spo2_text.value = f"SpO₂: {data.get('spo2', '--')} %"
