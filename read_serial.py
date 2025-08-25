@@ -19,3 +19,4 @@ while True:
         print("❌ Error posting data:", e)
 
     time.sleep(5)
+
